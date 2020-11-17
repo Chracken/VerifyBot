@@ -128,6 +128,12 @@ Upload WebFiles, go to include folder and edit config.inc.php
 if everything is set run the bot and test it using:  
 `sh start.sh`
 
+How to user pm2?
+`pm2 list` - shows you a list with all pm2 processes  
+`pm2 stop id` - show some process from pm2 list by id
+`pm2 kill` - stop all pm2 processes
+`pm2 logs` - shows logs about all processes in real time! Use it to see VerifyBot activity.
+
 
 
 

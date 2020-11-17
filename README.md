@@ -11,9 +11,9 @@ Sometimes it can be accessed using chrome incognito but don't bother too much th
 Ubuntu 16.04 server or any other linux, just adapt!  
 WebServer with php5.0+ and mysqli enabled.  
 
-#Commands
+#Commands  
 `!verify <code>` - With this you get verified using your code!  
-`!ban @mentions reason` - ban someone with or without reason  
+`!ban @mention reason` - ban someone with or without reason  
 `!unban name#0000` - unban someone  
 `!unbandb id` - unban someoone by discord id (use it only if you already unbanned someone using another bot or by hand, if you don't use it the bot will still ban that person).  
 `!setup` - sets notverified role to all channels!

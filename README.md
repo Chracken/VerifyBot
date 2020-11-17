@@ -47,7 +47,7 @@ Use the following command in terminal:
 now use your password from mysql installation.  
 
 Now let's build our mysql   
-!!remember to change <siteusername> with any username and <sitepassword> with any password  
+!!remember to change `siteusername` with any username and `sitepassword` with any password  
   Use the following mysql commands:  
 
 `GRANT ALL PRIVILEGES ON *.* to 'siteusername'@'%' identified by 'sitepassword' with grant option;`  

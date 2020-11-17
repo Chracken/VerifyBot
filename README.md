@@ -3,13 +3,20 @@ Verify System for Discord servers made with Python, MySQL and PHP.
 How it works?  
 When someone joins your server they will get a validation link from bot on DM  
 When they start Validation Process, their unique browser id will be sent in database (Also Their IP if you want to use IP BAN SYSTEM by default it is disabled).  
-So! When you ban someone using verifybot that person will be banned on browser id and will be hard for them to join again.  
+So! When you ban someone using verifybot that person will be banned on browser id (or/and ip if you enable that feature).  
 Validation url don't allow proxy servers, vpn clients or incognito mode!  
 Sometimes it can be accessed using chrome incognito but don't bother too much they will be recognized by the bot anyway  
 
 #Requirements
 Ubuntu 16.04 server or any other linux, just adapt!  
 WebServer with php5.0+ and mysqli enabled.  
+
+#Commands
+`!verify <code>` - With this you get verified using your code!  
+`!ban @mentions reason` - ban someone with or without reason  
+`!unban name#0000` - unban someone  
+`!unbandb id` - unban someoone by discord id (use it only if you already unbanned someone using another bot or by hand, if you don't use it the bot will still ban that person).  
+`!setup` - sets notverified role to all channels!
 
 #Tutorial
 ----
@@ -96,11 +103,17 @@ upload bot files then use the following commands:
 ----
 Bot Settings
 ---
+1. go to https://discord.com/developers/applications  
+2. click on New Application , give it a name: ex: VerifyBot then click create  
+3. go to Bot section then click on Add Bot  
+4. copy your token somewhere safe or add it directly to credentials.json
+5. open your server settings -> roles -> create a new role called NotVerified, right click on that role and copy role id into credentials.json file.
+
 open credentials.json and fill everything.
 ```
   "DISCORD_TOKEN": "Your Bot Token",
   "PREFIX": "!",
-  "SITE": "https://yoursite.com", // take care don't add trailing slash "/" at the end.
+  "SITE": "https://yoursite.com", // site location where you uploaded web files, take care don't add trailing slash "/" at the end.
   "SERVERID": 000000000000000000, // Your server ID
   "ROLEID": 000000000000000000, // NotVerified role ID from your SERVER
   "BOT_OWNER_ID": 000000000000000000, //fill with your id

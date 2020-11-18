@@ -109,7 +109,7 @@ Bot Settings
 3. go to Bot section then click on Add Bot  
 4. copy your token somewhere safe or add it directly to credentials.json
 5. open your server settings -> roles -> create a new role called NotVerified, right click on that role and copy role id into credentials.json file.
-6. go to your application and get the client id from general information , edit the following link with your client id to invite verifybot on your server  
+6. go to your application and get the client id from general information , edit the following link with your client id and after that access it to invite verifybot on your server  
 `https://discord.com/oauth2/authorize?client_id=`client-id-here`&scope=bot&permissions=469839031`
 
 open credentials.json and fill everything.

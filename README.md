@@ -93,7 +93,7 @@ Install BOT Dependencies
 `sudo apt install python3.6`  
 
 Download the following archive on your pc: https://github.com/Chracken/VerifyBot/archive/main.zip  
-upload the content Bot Files folder in your root then use the following commands:
+upload the content Bot Files folder in your root then use the following commands:  
 `sudo pip3 install -r dependencies.txt`  
 `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`  
 `sudo apt-get install -y nodejs`  

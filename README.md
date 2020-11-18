@@ -93,7 +93,7 @@ Install BOT Dependencies
 `sudo apt install python3.6`  
 
 Download the following archive on your pc: https://github.com/Chracken/VerifyBot/archive/main.zip  
-upload the content Bot Files folder in your root then use the following commands:  
+upload the content from Bot Files folder in your root then use the following commands:  
 `sudo pip3 install -r dependencies.txt`  
 `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`  
 `sudo apt-get install -y nodejs`  
@@ -127,7 +127,7 @@ open credentials.json and fill everything.
 also if you want to enable ip ban change `"allowipban": false` to `"allowipban": true`  
 
 Now login to your webserver and make sure you have mysqli enabled.  
-Upload WebFiles, go to include folder and edit config.inc.php  
+Upload Web Files, go to include folder and edit config.inc.php  
 if everything is set run the bot and test it using:  
 `sh start.sh`
 

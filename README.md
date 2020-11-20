@@ -99,7 +99,7 @@ upload the content from Bot Files folder in your root then use the following com
 `sudo apt-get install -y nodejs`  
 `sudo apt-get install -y build-essential`  
 `sudo npm i -g npm`  
-`sudo npm install pm2` or `npm i -g pm2` (use second variant if you get `No command 'pm2' found`)
+`sudo npm install pm2` or `sudo npm i -g pm2` (use second variant if you get `No command 'pm2' found`)
 
 ----
 Bot Settings

@@ -89,7 +89,7 @@ Use the following command in terminal:
 ----
 Install BOT Dependencies
 ----
-`sudo add-apt-repository ppa:deadsnakes/ppa`
+`sudo add-apt-repository ppa:deadsnakes/ppa`  
 `sudo apt update`  
 `sudo apt install python3.6`  
 
@@ -100,7 +100,7 @@ upload the content from Bot Files folder in your root then use the following com
 `sudo apt-get install -y nodejs`  
 `sudo apt-get install -y build-essential`  
 `sudo npm i -g npm`  
-`sudo npm install pm2` or `sudo npm i -g pm2` (use second variant if you get `No command 'pm2' found`)
+`sudo npm i -g pm2`
 
 ----
 Bot Settings

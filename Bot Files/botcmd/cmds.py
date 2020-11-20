@@ -135,8 +135,8 @@ class cmds(commands.Cog):
             
     @commands.command(pass_context=True, no_pm=True)
     @commands.has_permissions(ban_members = True)
-    async def unbandb(self, ctx, id):
-        if id.isnumeric() and len(id) == 18:
+    async def unbandb(self, ctx, ids):
+        if ids.isnumeric() and len(ids) == 18:
             try:
                 database = mysql.connector.connect(
                   host=mysql_ip,
@@ -145,18 +145,23 @@ class cmds(commands.Cog):
                   database='verifybot'
                 )
                 cursor = database.cursor(buffered=True)
-                CheckIfItExists = ("SELECT status FROM security WHERE userid = " + str(id))
+                CheckIfItExists = ("SELECT status FROM security WHERE userid = " + str(ids))
                 cursor.execute(CheckIfItExists)
                 row_count = cursor.rowcount
                 if row_count == 1:
-                    unbanuser2 = ("DELETE FROM security WHERE userid = " + str(id))
+                    unbanuser2 = ("DELETE FROM security WHERE userid = " + str(ids))
                     cursor.execute(unbanuser2)
                     database.commit()
                     cursor.close()
                     database.close()
-                    await ctx.send(f'{unbannedtext} ID: `{id}`')
+                    membertounban = await self.bot.fetch_user(ids)
+                    try:
+                        await ctx.guild.unban(membertounban)
+                    except:
+                        pass
+                    await ctx.send(f'{unbannedtext} ID: `{ids}`')
                 if row_count == 0:
-                    await ctx.send(f'{notindatabase} ID: `{id}`')
+                    await ctx.send(f'{notindatabase} ID: `{ids}`')
             except:
                 pass
         else:

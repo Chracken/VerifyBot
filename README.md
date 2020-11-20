@@ -92,7 +92,7 @@ Install BOT Dependencies
 `sudo add-apt-repository ppa:deadsnakes/ppa`  
 `sudo apt update`  
 `sudo apt install python3.6`  
-`sudo apt install python3-pip`  
+`curl https://bootstrap.pypa.io/get-pip.py | sudo -H python3.6`  
 
 Download the following archive on your pc: https://github.com/Chracken/VerifyBot/archive/main.zip  
 upload the content from Bot Files folder in your root then use the following commands:  

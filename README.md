@@ -7,7 +7,7 @@ So! When you ban someone using verifybot that person will be banned on browser i
 Validation url don't allow proxy servers, vpn clients or incognito mode!  
 Sometimes it can be accessed using chrome incognito but don't bother too much they will be recognized by the bot anyway  
 
-#Requirements
+#Requirements  
 Ubuntu 16.04 server or any other linux, just adapt!  
 WebServer with php5.0+ and mysqli enabled.  
 
